@@ -37,7 +37,7 @@ if text in post_response.text:
 # Abort if maximum connections reached
 text = 'The maximum number of attempts has been reached'
 if text in post_response.text:
-    print('🔥  Slow down! Maxium connections reached')
+    print('🔥  Slow down! Maximum connections reached')
     sys.exit()
 
 soup = BeautifulSoup(response.text, 'html.parser')
