@@ -53,9 +53,9 @@ for table_row in table_rows:
     cells = table_row.findAll('td')
     if len(cells) > 0:
         if cells[0].text:
-            option = cells[0].text.strip().replace(" ", "")
-        if len(cells[1].text.strip()) > 0 :
-            parameter = cells[1].text.strip()
+            option = cells[0].get_text().strip().replace(" ", "")
+        if len(cells[1].get_text().strip()) > 0 :
+            parameter = cells[1].get_text().strip()
         else:
             parameter = cells[1].find('input')['value'].strip()
         # Populate the dictionary
