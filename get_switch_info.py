@@ -42,8 +42,6 @@ if text in post_response.text:
 
 soup = BeautifulSoup(response.text, 'html.parser')
 
-# soup = BeautifulSoup(html_string, 'html.parser')
-
 live_settings = {}
 
 # Scrape table rows
