@@ -1,3 +1,5 @@
 requests==2.18.4
+hurry.filesize==0.9
 beautifulsoup4==4.7.1
 python-dotenv==0.10.3
+hurry==1.0
